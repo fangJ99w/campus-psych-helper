@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>校园心理助手</title>
+    <link rel="stylesheet" href="/css/styles.css">
+</head>
+<body>
+<h1>校园心理助手</h1>
+
+<!-- 用户注册 -->
+<div id="register">
+    <h2>用户注册</h2>
+    <form id="register-form">
+        <input type="text" id="register-username" placeholder="用户名" required>
+        <input type="password" id="register-password" placeholder="密码" required>
+        <button type="submit">注册</button>
+    </form>
+    <p id="register-message"></p>
+</div>
+
+<!-- 用户登录 -->
+<div id="login">
+    <h2>用户登录</h2>
+    <form id="login-form">
+        <input type="text" id="login-username" placeholder="用户名" required>
+        <input type="password" id="login-password" placeholder="密码" required>
+        <button type="submit">登录</button>
+    </form>
+    <p id="login-message"></p>
+</div>
+
+<!-- 发送消息 -->
+<div id="send-message">
+    <h2>发送消息</h2>
+    <form id="send-message-form">
+        <input type="text" id="message-content" placeholder="消息内容" required>
+        <button type="submit">发送</button>
+    </form>
+    <p id="send-message-message"></p>
+</div>
+
+<!-- 获取聊天记录 -->
+<div id="chat-history">
+    <h2>聊天记录</h2>
+    <button id="load-chat-history">加载聊天记录</button>
+    <ul id="chat-history-list"></ul>
+</div>
+
+<script src="/js/app.js"></script>
+</body>
+</html>
